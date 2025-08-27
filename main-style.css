@@ -1,0 +1,69 @@
+@charset "utf-8";
+@font-face {font-family: rubik;
+src: url("font/Rubik-VariableFont_wght.ttf")}
+*{font-size: 16px; font-family: rubik}
+.container{margin: 2px auto; max-width: 1024px}
+header{max-width: 1024px; margin: 0px auto}
+header nav{max-width: 1024px; width: 100%;
+	padding: 0px 11px;display: flex;
+	position: fixed;
+justify-content: space-around;align-items: center;
+border-radius: 35px}
+header nav section{margin: 5px 8px; padding:17px 0px ; background-color: black; text-align: center; border-radius: 30px; flex-basis: 70px; flex-shrink: 1; box-shadow: 5px 6px 15px black; transition:0.25s}
+header nav section:hover{flex-basis: 200px;flex-shrink: 1}
+.phone{color: white; font-size: 1.3em}
+.instagram{color: white; font-size: 1.5em}
+.mobile{color: white; font-size: 1.3em}
+.whatsapp{color: white;font-size: 1.6em}
+.telegram{color: white;font-size: 1.4em}
+.email{color: white;font-size: 1.4em}
+.phone2:hover{background-color: chocolate; box-shadow: 5px 6px 15px chocolate}
+.instagram2:hover{background-color: deeppink; box-shadow: 5px 6px 15px deeppink}
+.mobile2:hover{background-color: red; box-shadow: 5px 6px 15px red}
+.whatsapp2:hover{background-color: green; box-shadow: 5px 6px 15px green}
+.telegram2:hover{background-color: dodgerblue; box-shadow: 5px 6px 15px dodgerblue}
+.email2:hover{background-color: darkgoldenrod; box-shadow: 5px 6px 15px darkgoldenrod}
+header section img{width: 100%; border-radius: 20px; box-shadow: 5px 6px 15px black; }
+main{direction: rtl;margin: 100px 0px 50px 0px; width: 100%}
+main >section{border: 1px solid black; border-radius: 50px;box-shadow: 5px 6px 15px black}
+main >section h1 {font-size: 2em; margin: 30px; text-align: center}
+main >section h2 {font-size:1.2em ; text-align: center;margin: 70px}
+main>div {width: 100%;margin-top: 100px;display: grid;
+grid-template-columns: repeat(2,minmax(1px,1fr));grid-auto-flow: dense}
+main >div > ul{list-style-type: none;max-width: 512px; grid-column: 1/2; grid-row: auto/span 1 ;border-bottom: 1px solid black;margin-left: 50px}
+li h1{font-size: 2em}
+main>div>ul>li{box-sizing: border-box; margin-top: 60px}
+main >div>div{grid-column: 2/3}
+main img{max-width: 512px}
+
+
+footer{background-color: #1A1A1A; max-width: 1024px; width: 100% ; border-radius: 20px;
+position: fixed; bottom: 0; color: white; padding: 15px 20px; text-align: center; margin:5px auto; box-sizing: border-box; box-shadow: 5px -6px 25px black; transition: 0.25s}
+footer:hover{font-size: 2em; background-color: blue; box-shadow: 5px -4px 25px blue}
+::selection{background-color:black; color:white}
+/*media query*/
+@media screen and (max-width:600px){* {box-sizing: border-box}
+	.container{max-width:600px}
+header nav{padding: 3px 0px;flex-direction: column;
+justify-content: flex-start;align-items: flex-start;
+border-radius: 35px}
+header nav section{margin: 4px 3px; padding:0px 5px ; background-color: black; border-radius: 10px; max-height: 40px; align-content: center}
+	main{max-width: 548px}
+main >section{margin-right: auto;margin-left: auto; max-width: 540px}
+main img{max-width: 200px}
+main >section h1 {font-size: 1.2em; margin: 15px 7px; text-align: center}
+main >section h2 {font-size: 0.8em ; text-align: center;margin: 10px 7px}
+main>div {display: flex;flex-direction: column; justify-content: space-between; align-items: center}
+	.au{order: 1}
+	.image{order: 2}
+	.com{order: 3}
+	.image2{order: 4}
+	.wu{order:5}
+	.image3{order: 6}
+	.contact{order: 7}
+	.image4{order: 8}
+main >div > ul{list-style-type: none;border-bottom: none ;margin-left: 70px;margin-bottom: 40px}
+	li h1{font-size: 1em}
+footer{background-color: #1A1A1A; max-width: 600px; width: 100% ; border-radius: 20px;
+position: fixed; bottom: 0; color: white; padding: 15px 20px; text-align: center; margin:5px 1px; box-sizing: border-box; box-shadow: 5px -6px 25px black; transition: 0.25s}
+footer:hover{font-size: 2em; background-color: blue; box-shadow: 5px -4px 25px blue}}
